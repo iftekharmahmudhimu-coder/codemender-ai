@@ -1,0 +1,42 @@
+{
+  "name": "codemender-ai",
+  "version": "0.1.0",
+  "description": "Autonomous AI maintainer for Node, Laravel and other projects: finishes incomplete work, fixes failing code, and implements module-wise requirement files. Claude by default, with automatic fallback to free models when tokens run out.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "codemender": "bin/codemender.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "stubs",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint": "node --check bin/codemender.js && for f in src/*.js src/**/*.js; do node --check \"$f\" || exit 1; done"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "claude",
+    "anthropic",
+    "laravel",
+    "node",
+    "autonomous",
+    "code-fix",
+    "requirements",
+    "todo"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.5.0"
+  }
+}
