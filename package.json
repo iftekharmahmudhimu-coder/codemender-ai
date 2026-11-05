@@ -38,5 +38,10 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.5.0"
-  }
+  },
+  "author": "iftekharmahmudhimu-coder",
+  "repository": { "type": "git", "url": "git+https://github.com/iftekharmahmudhimu-coder/codemender-ai.git" },
+  "homepage": "https://github.com/iftekharmahmudhimu-coder/codemender-ai#readme",
+  "bugs": { "url": "https://github.com/iftekharmahmudhimu-coder/codemender-ai/issues" },
+  "publishConfig": { "access": "public" }
 }
